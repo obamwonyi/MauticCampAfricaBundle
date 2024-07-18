@@ -1,0 +1,17 @@
+{
+  "name": "mautic/plugin-mauticcampafrica",
+  "description": "MauticCampAfrica Plugin",
+  "type": "mautic-plugin",
+  "keywords": [
+    "mautic",
+    "plugin",
+    "integration"
+  ],
+  "extra": {
+    "install-directory-name": "MauticCampAfricaBundle"
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "mautic/core-lib": "^5.0"
+  }
+}
