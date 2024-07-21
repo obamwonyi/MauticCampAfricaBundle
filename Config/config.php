@@ -1,22 +1,26 @@
 <?php
-
 return [
-	'name'        => 'MauticCampAfrica',
-	'description' => 'Manage Mautic Camp events registrations in Africa/Lagos',
-	'author'      => [
-		[
-			'name' => 'Destiny Obamwonyi',
-			'email' => 'developer.oduwa@gmail.com'
+	'name'        => 'Mautic Camp Africa',
+	'description' => 'Mautic Camp Africa plugin for Mautic',
+	'version'     => '1.0',
+	'author'      => 'Your Name',
+	'routes'   => [
+		'main' => [
+			'mautic_campafricabundle_index' => [
+				'path'       => '/campafricabundle',
+				'controller' => 'MauticCampAfricaBundle:Default:index',
+			],
 		],
-		[
-			'name' => '',
-			'email' => ''
-		]
 	],
-	'version'    => '1.0.0',
-	'services'   => [
+	'menu' => [
+		'main' => [
+			'items' => [
+				'mautic.campafricabundle.menu.index' => [
+					'route'     => 'mautic_campafricabundle_index',
+					'iconClass' => 'fa-globe',
+					'priority'  => 70,
+				],
+			],
+		],
 	],
-	'routes'	=> [
-
-	]
 ];
